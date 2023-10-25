@@ -1,27 +1,21 @@
 {
-  "name": "keystatic-app",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@keystatic/templates-nextjs",
+  "version": "0.0.14",
+  "license": "MIT",
   "scripts": {
-    "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "next dev",
+    "start": "next start"
   },
   "dependencies": {
-    "@keystatic/core": "^0.0.112",
-    "@keystatic/next": "^0.0.11",
-    "@types/node": "20.4.2",
-    "@types/react": "18.2.15",
-    "@types/react-dom": "18.2.7",
-    "autoprefixer": "10.4.14",
-    "eslint": "8.45.0",
-    "eslint-config-next": "13.4.10",
-    "next": "13.4.10",
-    "postcss": "8.4.26",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "3.3.3",
-    "typescript": "5.1.6"
+    "@keystatic/core": "^0.1.0",
+    "@keystatic/next": "^1.0.0",
+    "next": "^13.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.8",
+    "typescript": "^5.2.2"
   }
 }
