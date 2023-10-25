@@ -1,0 +1,21 @@
+{
+  "name": "keystatic-starter",
+  "version": "0.0.14",
+  "license": "MIT",
+  "scripts": {
+    "build": "next build",
+    "dev": "next dev",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@keystatic/core": "^0.1.7",
+    "@keystatic/next": "^1.0.1",
+    "next": "^13.5.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.8",
+    "typescript": "^5.2.2"
+  }
+}

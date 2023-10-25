@@ -1,0 +1,25 @@
+"use strict";
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "vendor-chunks/is-plain-object@5.0.0";
+exports.ids = ["vendor-chunks/is-plain-object@5.0.0"];
+exports.modules = {
+
+/***/ "(rsc)/../../node_modules/.pnpm/is-plain-object@5.0.0/node_modules/is-plain-object/dist/is-plain-object.js":
+/*!***********************************************************************************************************!*\
+  !*** ../../node_modules/.pnpm/is-plain-object@5.0.0/node_modules/is-plain-object/dist/is-plain-object.js ***!
+  \***********************************************************************************************************/
+/***/ ((__unused_webpack_module, exports) => {
+
+eval("\nObject.defineProperty(exports, \"__esModule\", ({\n    value: true\n}));\n/*!\n * is-plain-object <https://github.com/jonschlinkert/is-plain-object>\n *\n * Copyright (c) 2014-2017, Jon Schlinkert.\n * Released under the MIT License.\n */ function isObject(o) {\n    return Object.prototype.toString.call(o) === \"[object Object]\";\n}\nfunction isPlainObject(o) {\n    var ctor, prot;\n    if (isObject(o) === false) return false;\n    // If has modified constructor\n    ctor = o.constructor;\n    if (ctor === undefined) return true;\n    // If has modified prototype\n    prot = ctor.prototype;\n    if (isObject(prot) === false) return false;\n    // If constructor does not have an Object-specific method\n    if (prot.hasOwnProperty(\"isPrototypeOf\") === false) {\n        return false;\n    }\n    // Most likely a plain Object\n    return true;\n}\nexports.isPlainObject = isPlainObject;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi4vLi4vbm9kZV9tb2R1bGVzLy5wbnBtL2lzLXBsYWluLW9iamVjdEA1LjAuMC9ub2RlX21vZHVsZXMvaXMtcGxhaW4tb2JqZWN0L2Rpc3QvaXMtcGxhaW4tb2JqZWN0LmpzIiwibWFwcGluZ3MiOiJBQUFBO0FBRUFBLDhDQUE2QztJQUFFRyxPQUFPO0FBQUssQ0FBQyxFQUFDO0FBRTdEOzs7OztDQUtDLEdBRUQsU0FBU0MsU0FBU0MsQ0FBQztJQUNqQixPQUFPTCxPQUFPTSxTQUFTLENBQUNDLFFBQVEsQ0FBQ0MsSUFBSSxDQUFDSCxPQUFPO0FBQy9DO0FBRUEsU0FBU0ksY0FBY0osQ0FBQztJQUN0QixJQUFJSyxNQUFLQztJQUVULElBQUlQLFNBQVNDLE9BQU8sT0FBTyxPQUFPO0lBRWxDLDhCQUE4QjtJQUM5QkssT0FBT0wsRUFBRU8sV0FBVztJQUNwQixJQUFJRixTQUFTRyxXQUFXLE9BQU87SUFFL0IsNEJBQTRCO0lBQzVCRixPQUFPRCxLQUFLSixTQUFTO0lBQ3JCLElBQUlGLFNBQVNPLFVBQVUsT0FBTyxPQUFPO0lBRXJDLHlEQUF5RDtJQUN6RCxJQUFJQSxLQUFLRyxjQUFjLENBQUMscUJBQXFCLE9BQU87UUFDbEQsT0FBTztJQUNUO0lBRUEsNkJBQTZCO0lBQzdCLE9BQU87QUFDVDtBQUVBWixxQkFBcUIsR0FBR08iLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9rZXlzdGF0aWMtc3RhcnRlci8uLi8uLi9ub2RlX21vZHVsZXMvLnBucG0vaXMtcGxhaW4tb2JqZWN0QDUuMC4wL25vZGVfbW9kdWxlcy9pcy1wbGFpbi1vYmplY3QvZGlzdC9pcy1wbGFpbi1vYmplY3QuanM/ZDA3OSJdLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIHN0cmljdCc7XG5cbk9iamVjdC5kZWZpbmVQcm9wZXJ0eShleHBvcnRzLCAnX19lc01vZHVsZScsIHsgdmFsdWU6IHRydWUgfSk7XG5cbi8qIVxuICogaXMtcGxhaW4tb2JqZWN0IDxodHRwczovL2dpdGh1Yi5jb20vam9uc2NobGlua2VydC9pcy1wbGFpbi1vYmplY3Q+XG4gKlxuICogQ29weXJpZ2h0IChjKSAyMDE0LTIwMTcsIEpvbiBTY2hsaW5rZXJ0LlxuICogUmVsZWFzZWQgdW5kZXIgdGhlIE1JVCBMaWNlbnNlLlxuICovXG5cbmZ1bmN0aW9uIGlzT2JqZWN0KG8pIHtcbiAgcmV0dXJuIE9iamVjdC5wcm90b3R5cGUudG9TdHJpbmcuY2FsbChvKSA9PT0gJ1tvYmplY3QgT2JqZWN0XSc7XG59XG5cbmZ1bmN0aW9uIGlzUGxhaW5PYmplY3Qobykge1xuICB2YXIgY3Rvcixwcm90O1xuXG4gIGlmIChpc09iamVjdChvKSA9PT0gZmFsc2UpIHJldHVybiBmYWxzZTtcblxuICAvLyBJZiBoYXMgbW9kaWZpZWQgY29uc3RydWN0b3JcbiAgY3RvciA9IG8uY29uc3RydWN0b3I7XG4gIGlmIChjdG9yID09PSB1bmRlZmluZWQpIHJldHVybiB0cnVlO1xuXG4gIC8vIElmIGhhcyBtb2RpZmllZCBwcm90b3R5cGVcbiAgcHJvdCA9IGN0b3IucHJvdG90eXBlO1xuICBpZiAoaXNPYmplY3QocHJvdCkgPT09IGZhbHNlKSByZXR1cm4gZmFsc2U7XG5cbiAgLy8gSWYgY29uc3RydWN0b3IgZG9lcyBub3QgaGF2ZSBhbiBPYmplY3Qtc3BlY2lmaWMgbWV0aG9kXG4gIGlmIChwcm90Lmhhc093blByb3BlcnR5KCdpc1Byb3RvdHlwZU9mJykgPT09IGZhbHNlKSB7XG4gICAgcmV0dXJuIGZhbHNlO1xuICB9XG5cbiAgLy8gTW9zdCBsaWtlbHkgYSBwbGFpbiBPYmplY3RcbiAgcmV0dXJuIHRydWU7XG59XG5cbmV4cG9ydHMuaXNQbGFpbk9iamVjdCA9IGlzUGxhaW5PYmplY3Q7XG4iXSwibmFtZXMiOlsiT2JqZWN0IiwiZGVmaW5lUHJvcGVydHkiLCJleHBvcnRzIiwidmFsdWUiLCJpc09iamVjdCIsIm8iLCJwcm90b3R5cGUiLCJ0b1N0cmluZyIsImNhbGwiLCJpc1BsYWluT2JqZWN0IiwiY3RvciIsInByb3QiLCJjb25zdHJ1Y3RvciIsInVuZGVmaW5lZCIsImhhc093blByb3BlcnR5Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(rsc)/../../node_modules/.pnpm/is-plain-object@5.0.0/node_modules/is-plain-object/dist/is-plain-object.js\n");
+
+/***/ })
+
+};
+;

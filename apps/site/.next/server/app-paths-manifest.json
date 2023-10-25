@@ -1,0 +1,4 @@
+{
+  "/design-system/[...component]/page": "app/design-system/[...component]/page.js",
+  "/page": "app/page.js"
+}
