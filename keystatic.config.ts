@@ -17,7 +17,7 @@ export default config({
   collections: {
     designSystem: collection({
       label: 'Design System',
-      path: 'content/design-system/**',
+      path: 'content/design-system/**/',
       slugField: 'name',
       schema: {
         name: fields.slug({
