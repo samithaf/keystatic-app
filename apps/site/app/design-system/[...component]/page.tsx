@@ -12,6 +12,7 @@ export default async function Page({params}: Props) {
     return (
         <>
             <p>Looking up article {component.join('/')}</p>
+            <div>all entries {JSON.stringify(designs)}</div>
             <ul>
                 {designs.map(post => (
                     <li key={post.slug}>

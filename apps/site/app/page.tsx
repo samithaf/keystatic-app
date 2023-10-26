@@ -9,6 +9,7 @@ export default async function Homepage() {
   return (
     <div>
       <h1>GEL components</h1>
+      <div>all entries {JSON.stringify(designs)}</div>
       <ul>
         {designs.map(post => (
           <li key={post.slug}>
