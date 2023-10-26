@@ -5,7 +5,6 @@ import {reader} from "./keystatic/reader";
 
 export default async function Homepage() {
   const designs = await reader.collections.designSystem.all();
-  console.log('designs', designs);
 
   return (
     <div>
