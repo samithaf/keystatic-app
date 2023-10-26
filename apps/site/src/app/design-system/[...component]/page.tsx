@@ -1,7 +1,19 @@
 import Link from "next/link";
 import {reader} from "../../keystatic/reader";
 
-export default async function Page() {
+type Props = {
+    params: { component: string[] }
+}
+
+export async function generateStaticParams() {
+    const rows = ["components","checkbox-group"]
+
+    return rows.map((row) => ({
+        component: ["components","checkbox-group"],
+    }));
+}
+
+export default async function Page({params}: Props) {
     const designs = await reader.collections.designSystem.all();
 
     return (
