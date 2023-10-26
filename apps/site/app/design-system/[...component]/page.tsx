@@ -14,6 +14,7 @@ export default async function Page({params}: Props) {
     return (
         <>
             <p>{designs?.name}<br/>{designs?.description}</p>
+            <p>Looking up article {component.join('/')}</p>
             <p>params {JSON.stringify(params)}</p>
         </>
     )
