@@ -1,6 +1,7 @@
 import Link from 'next/link';
-import { reader } from './reader';
+
 import './styles.css';
+import {reader} from "./keystatic/reader";
 
 export default async function Homepage() {
   const designs = await reader.collections.designSystem.all();

@@ -1,5 +1,6 @@
-import {reader} from "../../reader";
+
 import Link from "next/link";
+import {reader} from "../../keystatic/reader";
 
 
 type Props = {
