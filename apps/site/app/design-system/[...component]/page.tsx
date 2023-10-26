@@ -7,7 +7,7 @@ type Props = {
 export default async function Page({params}: Props) {
     const {component} = params;
     console.log('component', component);
-    const designs = await reader.collections.designSystem.read(component.join('/'));
+    const designs = await reader.collections.designSystem.read('components/alert');
 
     console.log('designs', designs)
 
