@@ -7,15 +7,17 @@ type Props = {
 export default async function Page({params}: Props) {
     const {component} = params;
     console.log('component', component);
-    const designs = await reader.collections.designSystem.read('components/alert');
+    const collection = await reader.collections.designSystem.all();
+    const matchingComponent = collection.find(post => post.slug === component.join('/'));
 
-    console.log('designs', designs)
+    if(!matchingComponent) {
+        return <p>Sorry!</p>
+    }
 
     return (
         <>
-            <p>{designs?.name}<br/>{designs?.description}</p>
             <p>Looking up article {component.join('/')}</p>
-            <p>params {JSON.stringify(params)}</p>
+            <p>params {JSON.stringify(matchingComponent)}</p>
         </>
     )
 }
